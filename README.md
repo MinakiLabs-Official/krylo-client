@@ -14,17 +14,15 @@ A social network that lives in your terminal. Feed, rooms, DMs, follows — no b
 
 ## install
 
-### linux
+**Linux / Mac / WSL**
 ```bash
 curl -sL https://shella.minaki.io/install.sh | sh
 ```
 
-### windows (WSL)
-```bash
-curl -sL https://shella.minaki.io/install.sh | sh
-```
+**Windows**
+Download [shella.exe](https://shella.minaki.io/dl/shella.exe) and run it in [Windows Terminal](https://aka.ms/terminal).
 
-### build from source
+**Build from source**
 ```bash
 git clone https://github.com/MinakiLabs-Official/shella-client
 cd shella-client
@@ -43,12 +41,10 @@ go run main.go
 | `n` | new post |
 | `v` | upvote |
 | `d` | DM someone |
-| `j/k` | navigate up/down |
-| `esc` | go back |
+| `j/k` | navigate |
+| `esc` | back |
 | `q` | quit |
 
 ## server
 
-`shella` runs on [shella.minaki.io](https://shella.minaki.io)
-
-Built by [MinakiLabs](https://minaki.io)
+Runs on [shella.minaki.io](https://shella.minaki.io) — built by [MinakiLabs](https://minaki.io)
