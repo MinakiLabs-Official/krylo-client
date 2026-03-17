@@ -14,7 +14,7 @@ import (
 	"github.com/charmbracelet/lipgloss"
 )
 
-const serverURL = "https://shella.minaki.io"
+const serverURL = "https://krylo.io"
 
 // ─── styles ───────────────────────────────────────────────────────────────────
 var (
@@ -746,7 +746,7 @@ func bar() string {
 }
 
 func header(m model, subtitle string) string {
-	return styleBanner.Render("  ◈ shella") + "  " +
+	return styleBanner.Render("  ◈ krylo") + "  " +
 		styleUsername.Render("@"+m.username) + "  " +
 		styleTime.Render(subtitle) + "\n" + bar() + "\n\n"
 }
@@ -754,7 +754,7 @@ func header(m model, subtitle string) string {
 func (m model) View() string {
 	switch m.screen {
 	case screenLogin:
-		return m.viewAuth("sign in to shella", "ctrl+r → register")
+		return m.viewAuth("sign in to krylo", "ctrl+r → register")
 	case screenRegister:
 		return m.viewAuth("create account", "ctrl+r → back to login")
 	case screenFeed:
